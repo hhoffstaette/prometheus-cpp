@@ -23,6 +23,9 @@ target_include_directories(push
     ${CURL_INCLUDE_DIRS}
 )
 
+set_property(TARGET push PROPERTY VERSION "0.0.0")
+set_property(TARGET push PROPERTY SOVERSION 0 )
+
 set_target_properties(push PROPERTIES OUTPUT_NAME ${PROJECT_NAME}-push)
 
 install(

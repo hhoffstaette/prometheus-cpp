@@ -30,6 +30,9 @@ target_include_directories(core
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
+set_property(TARGET core PROPERTY VERSION "0.0.0")
+set_property(TARGET core PROPERTY SOVERSION 0 )
+
 set_target_properties(core PROPERTIES OUTPUT_NAME ${PROJECT_NAME}-core)
 
 install(
